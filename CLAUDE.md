@@ -1,0 +1,41 @@
+# PayTR
+
+> Bu dosya Claude Code tarafindan her oturumda otomatik okunur.
+
+<!-- SCAFFOLD:identity:START -->
+## Proje Kimligi
+- **Proje:** PayTR
+- **Slug:** paytr
+- **Aciklama:** PayTR odeme sistemi PHP kutuphanesi. Symfony HTTP Foundation/Client tabanli, PSR-4 autoload uyumlu odeme entegrasyon paketi.
+- **Dizin:** ~/projects/paytr/
+<!-- SCAFFOLD:identity:END -->
+
+<!-- SCAFFOLD:tech-stack:START -->
+## Teknoloji Stack
+- **Dil:** PHP >= 7.1.3
+- **Framework:** Symfony HttpFoundation + HttpClient
+- **Paket Yoneticisi:** Composer
+- **Namespace:** Mews\PayTr
+- **Lisans:** MIT
+- **Proje Tipi:** PHP Library (Composer package)
+<!-- SCAFFOLD:tech-stack:END -->
+
+## Kodlama Standartlari
+- PSR-4 autoloading
+- PSR-12 kodlama standartlari
+- camelCase metod isimleri, PascalCase class isimleri
+- Type declarations kullanimi (PHP 7.1+)
+- Git commit mesajlari Conventional Commits formatinda (feat/fix/refactor/docs)
+- Kod ve yorumlar Ingilizce
+
+## Guvenlik
+- Hassas bilgileri ASLA koda yazma
+- .env dosyalarini ASLA commit etme
+- API key/merchant bilgilerini environment variable olarak sakla
+- Odeme islemlerinde HMAC dogrulamasi zorunlu
+
+## Detayli Kurallar
+@.claude/rules/coding-standards.md
+@.claude/rules/security.md
+@.claude/rules/language.md
+@.claude/rules/turkish-characters.md

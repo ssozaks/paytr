@@ -1,0 +1,21 @@
+{
+  "project": "paytr",
+  "preset": "php-library",
+  "createdAt": "2026-02-09",
+  "features": {
+    "core": {
+      "git": {"enabled": true},
+      "claude-md": {"enabled": true},
+      "agents": {"enabled": true},
+      "commands": {"enabled": true},
+      "settings": {"enabled": true},
+      "hooks": {"enabled": true},
+      "agent-teams": {"enabled": true}
+    },
+    "optional": {
+      "openspec": {"enabled": false},
+      "ralph-wiggum": {"enabled": true},
+      "dangerous-mode": {"enabled": true}
+    }
+  }
+}

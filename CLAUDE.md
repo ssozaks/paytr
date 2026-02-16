@@ -36,11 +36,11 @@
 
 ## Bilinen Sorunlar (2026-02-14 Audit)
 
-| # | Sorun | Konum | Oncelik |
-|---|-------|-------|---------|
-| 1 | **Timing attack vulnerability** | `Payment.php:369` — `==` yerine `hash_equals()` kullanilmali | ORTA |
-| 2 | **Test yok** | Tum proje | PHPUnit veya benzeri test framework eklenebilir |
-| 3 | **OpenSpec yok** | Proje koku | Stabil kutuphane icin opsiyonel |
+| # | Sorun | Konum | Oncelik | Durum |
+|---|-------|-------|---------|-------|
+| 1 | ~~Timing attack vulnerability~~ | `Payment.php:369` — `hash_equals()` zaten kullaniliyor (dogrulanma: 2026-02-16) | ~~ORTA~~ | COZULDU |
+| 2 | **Test yok** | Tum proje | PHPUnit veya benzeri test framework eklenebilir | ACIK |
+| 3 | **OpenSpec yok** | Proje koku | Stabil kutuphane icin opsiyonel | ACIK |
 
 ## Detayli Kurallar
 @.claude/rules/coding-standards.md

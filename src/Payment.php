@@ -366,7 +366,7 @@ class Payment
             true
         ));
 
-        if ($hash == $request->get('hash')) {
+        if (hash_equals($hash, $request->get('hash'))) {
             return true;
         }
 

@@ -34,6 +34,14 @@
 - API key/merchant bilgilerini environment variable olarak sakla
 - Odeme islemlerinde HMAC dogrulamasi zorunlu
 
+## Bilinen Sorunlar (2026-02-14 Audit)
+
+| # | Sorun | Konum | Oncelik |
+|---|-------|-------|---------|
+| 1 | **Timing attack vulnerability** | `Payment.php:369` — `==` yerine `hash_equals()` kullanilmali | ORTA |
+| 2 | **Test yok** | Tum proje | PHPUnit veya benzeri test framework eklenebilir |
+| 3 | **OpenSpec yok** | Proje koku | Stabil kutuphane icin opsiyonel |
+
 ## Detayli Kurallar
 @.claude/rules/coding-standards.md
 @.claude/rules/security.md

@@ -1,0 +1,27 @@
+schema: spec-driven
+
+context: |
+  Project: PayTR PHP Payment Library (mews/paytr)
+  Type: Composer PHP library package
+  Language: PHP >= 7.1.3 with strict_types
+  Namespace: Mews\PayTr
+  Dependencies: Symfony HttpFoundation ^4.0|^5.0|^6.0, Symfony HttpClient ^4.0|^5.0|^6.0
+  Purpose: PayTR (Turkish payment gateway) integration library providing token-based iframe payment flow
+  Key Features:
+    - Payment token generation via HMAC-SHA256
+    - PayTR API communication for iframe token retrieval
+    - Callback hash verification for payment notifications
+    - Support for credit card and EFT/bank transfer payments
+    - Configurable merchant credentials, success/fail URLs
+    - Test mode and debug mode support
+  Architecture: 4 core classes (Payment, Config, Order, Response) + 2 custom exceptions
+  License: MIT
+  Coding Standards: PSR-4 autoloading, PSR-12 coding style
+
+rules:
+  proposal:
+    - Keep proposals focused on library API surface changes
+    - Always include backward compatibility analysis
+  tasks:
+    - Each task should target a single class or concern
+    - Include PHPUnit test requirements for new functionality

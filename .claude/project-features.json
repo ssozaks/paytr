@@ -13,9 +13,10 @@
       "agent-teams": {"enabled": true}
     },
     "optional": {
-      "openspec": {"enabled": false},
+      "openspec": {"enabled": true},
       "ralph-wiggum": {"enabled": true},
-      "dangerous-mode": {"enabled": true}
+      "dangerous-mode": {"enabled": true},
+      "test-coverage": {"enabled": false, "note": "rule-only, no PHP test runner configured"}
     }
   }
 }
